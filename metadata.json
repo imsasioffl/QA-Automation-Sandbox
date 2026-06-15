@@ -1,0 +1,6 @@
+{
+  "name": "QA Automation Sandbox",
+  "description": "Comprehensive QA testing sandbox with UI Mutation Engine and self-healing automation test scenarios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

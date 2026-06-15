@@ -2,11 +2,9 @@
 <img width="1200" height="475" alt="GHBanner" src="https://testgrid.io/blog/wp-content/uploads/2025/05/Accessibility-Testing-Tools.jpg" />
 </div>
 
-# Run and deploy your AI Studio app
+# Run and deploy your app
 
 This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/3689110b-e354-4e57-b56a-769c98fe845e
 
 ## Run Locally
 

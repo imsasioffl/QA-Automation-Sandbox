@@ -15,13 +15,13 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '24' # 👈 Fixed the Node warning
+          node-version: '24'
 
       - name: Install Dependencies
         run: npm install
 
       - name: Run Regression Pack
-        run: echo "Skipping tests for now" # 👈 Bypasses the test failure
+        run: echo "Skipping tests for now"
 
   # STAGE 2: BUILD & PUSH TO AWS
   build-and-deploy:
@@ -48,5 +48,6 @@ jobs:
           ECR_REPOSITORY: qautomation_sandbox_app
           IMAGE_TAG: latest
         run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          ls -la
+          docker build -f Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG

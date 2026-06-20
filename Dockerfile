@@ -6,7 +6,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Step 2: Serve the application using a lightweight web server
+# Step 2: Serve the application using a light weight web server
 FROM alpine:latest
 RUN apk add --no-cache caddy
 WORKDIR /app
